@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Cuentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MITOS Y LEYENDAS NICARAGÜENSES</h1>
+    </header>
+    
+    <main>
+        <!-- Contenedor del Narrador -->
+        <section id="narrador-container">
+            <div id="narrador">
+                <img src="images/narrador.png" alt="Narrador" id="narrador-img" onclick="saludar()">
+                <p id="mensaje-bienvenida"></p>
+                <audio id="audio-bienvenida" src="images/Bienvenida.mp3"></audio>
+            </div>
+        </section>
+
+        <!-- Carrusel con navegación automática y manual -->
+        <section id="carrusel-container">
+            <button id="prevBtn">⬅</button>
+            <div id="carrusel">
+                <div class="cuento" onclick="irACuento('la_mocuana/index.html')">
+                    <img src="la_mocuana/images/mocuana1.png" alt="Cuento 1">
+                    <p>La Mocuana</p>
+                </div>
+                <div class="cuento" onclick="irACuento('cuento2.html')">
+                    <img src="cuento2.jpg" alt="Cuento 2">
+                    <p>Cuento 2</p>
+                </div>
+                <div class="cuento" onclick="irACuento('cuento3.html')">
+                    <img src="cuento3.jpg" alt="Cuento 3">
+                    <p>Cuento 3</p>
+                </div>
+                <div class="cuento" onclick="irACuento('cuento4.html')">
+                    <img src="cuento4.jpg" alt="Cuento 4">
+                    <p>Cuento 4</p>
+                </div>
+                <div class="cuento" onclick="irACuento('cuento5.html')">
+                    <img src="cuento5.jpg" alt="Cuento 5">
+                    <p>Cuento 5</p>
+                </div>
+            </div>
+            <button id="nextBtn">➡</button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
